@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Br">
+        What is an event in react ?<br></br>
+        Just like HTML DOM events, React can perform actions based on user events.
+          React has the same events as HTML: click, change, mouseover etc.
+          React events are written in camelCase syntax.
+          React event handlers are written inside curly braces.<hr></hr>
+          What is memory leak and how to overcome ?<br></br>
+          Memory leak occurs when programmers create a memory in heap(larger amount) and forget to delete it.
+           disadvantage of memory leak is that it reduces the performance of the computer.
+          In worst case, too much of available memory may affect to the system, and your device may stops working correctly, application fails or system slows down.
+           Memory leaks are particularly serious issues for programs.
+    
+          To avoid memory leaks, memory allocated on heap should always be freed when no longer needed.  (freed = Mukt karne )
+          so we have to write free() and in paranthesis we have to name that function whatever we want to freed.<hr></hr> 
+          Do you prefer function-based or class component and why ?<br></br>
+          Functional Component:-
+             - A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).
+             - There is no render method used in functional components.
+             - Functional component run from top to bottom and once the function is returned it cant be kept alive.
+             - Also known as Stateless components as they simply accept data and display them in some form, that they are mainly responsible for rendering UI.
+             - React lifecycle methods cannot be used in functional components.
+             - Hooks can be easily used in functional components to make them Stateful.
+             - Constructors are not used.
+    
+           Class Component:-
+             - A class component requires you to extend from React. Component and create a render function which returns a React element.
+             - It must have the render() method returning JSX.
+             - Class component is instantiated and different life cycle method is kept alive and being run and invoked depending on phase of class component.
+             - Also known as Stateful components because they implement logic and state.
+             - React lifecycle methods can be used inside class components
+             - It requires different syntax inside a class component to implement hooks.
+             - Constructor are used as it needs to store state.<hr></hr>
+             Explain reducer as pure function in redux?<br></br>
+             pure Functions:-
+               A Pure Function is a function (a block of code) that always returns the same result if the same arguments are passed.
+               It does not depend on any state or data change during a program’s execution.
+    
+          whenever we dealing as a state value in React, the state value cannot be mutated directly.
+          we will use redux store values as our React state and hence they cannot be directly mutated.
+          To achieve that Reducers are made as pure.<hr></hr>
+          Why do we use redux thunk ?<br></br>
+          firstly we have to install 2 packages i.e. npm install Axios and Redux-Thunk.
+          Axios: for Req to an API end points.
+         Redux-Thunk: Define async action creators in our application.
+         Redux Thunk Library is basically a Middleware we are applying to our redux store.
+         that lets you call action creators that return a function instead of an action object.
+         can be used for logging, routing, asynchronous actions, etc.
+         Thunk function called with two arguments.
+         1. dispatch: It is a method used to dispatch actions, that can be received by reducers
+          2. getState: It gives access to store inside the thunk function.<hr></hr>
+          What do you know about NPM ?<br></br>
+          npm is the world's largest Software Registry.
+           The registry contains over 800,000 code packages.
+           Open-source developers use npm to share software.
+          npm is free to use.
+           npm is installed with Node.js.
+           npm can manage dependencies.
+           All npm packages are defined in files called package.json.
+           Many organizations also use npm to manage private development.
+           The content of package.json must be written in JSON.<hr></hr>
+        </div>
+</body>
+</html>
